@@ -18,7 +18,7 @@ apiVersion: v1 # this is version of kubernetes api you are using to create the o
 kind: Pod # Type of object we want to create 
 metadata: 
   name: nginx
-  label: 
+  labels: 
     app:  nginx
     tier: frontend
 
