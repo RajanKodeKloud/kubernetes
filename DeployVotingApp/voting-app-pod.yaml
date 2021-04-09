@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: voting-app-pod
+  labels:
+    name: voting-app-pod
+    app: demo-voting-app # we will use this to group every pod for our app so will keep this same
+spec:
+  containers:
+    - name: voting-app
+      image: kodekloud/examplevotingapp_vote:v1 # https://github.com/dockersamples/example-voting-app
+      ports:
+        - containerPort: 80 # on which app listen
