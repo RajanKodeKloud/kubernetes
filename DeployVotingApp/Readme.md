@@ -88,4 +88,9 @@ To scale replicas
 ```bash
 kubectl scale deployment voting-app-deployment --replicas=3
 ```
-Now if we refresh voting app we can see that containerId is diff on refresh which means it is using replicas
+Now if we refresh voting app we can see that containerId is diff on refresh which means it is using replicas 
+
+### Why service ?
+1. We have created service of apps which we want to access inside the cluster by name of pod
+- redis, postgres we want them in worker app
+2. We want some pods to be accessible for the outside users for that we will create service of them and set spec type as NodePort

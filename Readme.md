@@ -27,3 +27,9 @@ spec:
   - name: nginx
     image: nginx
 ```
+
+# Use full cmds 
+
+```
+kubectl get pods # To check the status of present pods 
+```
