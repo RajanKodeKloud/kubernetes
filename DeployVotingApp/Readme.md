@@ -83,3 +83,9 @@ kubectl create -f postgres-deployment.yaml
 kubectl create -f postgres-service.yaml 
 kubectl create -f worker-app-deployment.yaml 
 ```
+
+To scale replicas 
+```bash
+kubectl scale deployment voting-app-deployment --replicas=3
+```
+Now if we refresh voting app we can see that containerId is diff on refresh which means it is using replicas
